@@ -1,0 +1,19 @@
+<div class="ro">
+    <p>Pages: {{currentPage}}/{{page}} </p>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" (click)="prevStep(currentPage)">Previous</a></li>
+          <li class="page-item"><a class="page-link" (click)="nextStep(currentPage)">Next</a></li>
+        </ul>
+      </nav>
+
+</div>
+<div class="row">
+    <div class="col-5" *ngFor="let product of tempData">
+        <app-product
+        [name]=product.name
+        [description]=product.description>
+        </app-product>
+    </div>
+</div>
+

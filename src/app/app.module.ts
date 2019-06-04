@@ -12,6 +12,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductComponent } from './components/product/product.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +28,12 @@ import { ProductComponent } from './components/product/product.component';
     AboutComponent,
     HomeComponent,
     ProductComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     ProductService,

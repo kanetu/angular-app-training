@@ -15,6 +15,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
 
   {path: 'product', component: HomeComponent},
+  {path: 'next', component: MainPageComponent},
+  {path: 'prev', component: AboutComponent},
 
 ];
 
